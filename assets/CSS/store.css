@@ -1,0 +1,679 @@
+.page-body-store {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.search-nav {
+    background: var(--backgroundColor1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 7px;
+    box-shadow: 0 0 5px var(--boxShadowColor);
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    z-index: 888;
+}
+
+.search-nav .search-form {
+    height: 50px;
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.search-nav form a.go-back {
+    width: 35px;
+    text-decoration: none;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor1);
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.search-nav form input {
+    height: 35px;
+    width: calc(100% - 83px);
+    border: none;
+    background: var(--backgroundColor2);
+    color: var(--textColor1);
+    border-radius: 20px;
+    outline: none !important;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 10px;
+}
+
+.search-nav form button {
+    border: none;
+    width: 35px;
+    border-radius: 20px;
+    margin-left: 8px;
+    height: 35px;
+    background: var(--brandingColor);
+}
+
+/***** Shop Info section CSS *****/
+.shop-info {
+    border: 3px solid var(--borderColor1);
+    margin: 0 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.shop-info .actions {
+    float: right;
+    padding: 10px;
+}
+
+.shop-info .actions a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--iconColor);
+    padding: 3px;
+    margin: 0 10px;
+}
+
+.shop-info .c-1 {
+    padding: 10px;
+    width: 560px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.shop-info .shop-image {
+    width: 150px;
+    overflow: hidden;
+    margin-left: 20px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--borderColor1);
+    box-shadow: 0 0 10px var(--boxShadowColor);
+}
+
+.shop-info .shop-image img {
+    width: 100%;
+}
+
+.shop-info .name {
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    margin-left: 20px;
+    color: var(--textColor1);
+    white-space: nowrap;
+}
+
+.shop-info .location {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: var(--textColor1);
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+.shop-info .c-2 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+}
+
+.shop-info .ratings span {
+    font-size: 22px;
+    margin: 0 5px;
+}
+
+.shop-info .ratings span.active {
+    color: var(--brandingColor);
+}
+
+.shop-info .actions {
+    white-space: nowrap;
+}
+
+.shop-info .actions button {
+    padding: 4px 30px;
+    border-radius: 4px;
+    border: none !important;
+    outline: none !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColor1);
+    background: var(--backgroundColor2);
+    margin-right: 10px;
+    box-shadow: 0 0 3px var(--boxShadowColor);
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: center;
+}
+
+.shop-info .actions button:hover {
+    filter: brightness(0.98);
+}
+
+.shop-info .actions button:active {
+    box-shadow: none;
+}
+
+.shop-info .actions button svg {
+    height: 22px;
+    margin-right: 5px;
+    fill: var(--textColor1);
+}
+
+@media screen and (max-width: 800px) {
+    .shop-info .shop-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .shop-info .ratings span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .shop-info .c-1 {
+        width: 100%;
+        justify-content: unset;
+    }
+
+    .shop-info .c-2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .shop-info {
+        margin-top: 10px;
+    }
+
+    .shop-info .shop-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .shop-info .name {
+        font-size: 35px;
+    }
+
+    .shop-info .ratings span {
+        font-size: 18px;
+        margin: 0 3px;
+    }
+
+    .shop-info .actions button {
+        padding: 4px 10px;
+    }
+
+    .shop-info .c-1 .actions {
+        display: block;
+        width: 100%;
+        text-align: right;
+        margin-top: 20px !important;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .shop-info .shop-image {
+        width: 90px;
+        height: 90px;
+        border: 4px solid var(--borderColor1);
+        margin-left: 0;
+    }
+
+    .shop-info .name {
+        font-size: 30px;
+    }
+
+    .shop-info .ratings span {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .shop-info .actions button {
+        padding: 3px;
+        font-size: 17px;
+        margin-right: 4px;
+    }
+
+    .shop-info .actions button svg {
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .shop-info .shop-image {
+        width: 80px;
+        height: 80px;
+        border: 3px solid var(--borderColor1);
+        margin-left: 0;
+    }
+
+    .shop-info .name {
+        font-size: 25px;
+    }
+
+    .shop-info .ratings span {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .shop-info .actions button {
+        padding: 3px;
+        font-size: 15px;
+        margin-right: 3px;
+    }
+
+    .shop-info .actions button svg {
+        height: 17px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .shop-info .c-1 {
+        display: block;
+        justify-content: unset;
+    }
+
+    .shop-info .shop-image {
+        margin: 0 auto;
+    }
+
+    .shop-info .name {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .shop-info .c-2 {
+        display: block;
+        justify-content: unset;
+        padding: 0 7px;
+    }
+
+    .shop-info .ratings {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .shop-info .actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .shop-info .actions button {
+        margin-right: 10px;
+    }
+}
+
+/***** Shop Info section CSS End *****/
+
+.header-slider {
+    overflow: hidden;
+    position: relative;
+    border-radius: 21px;
+    margin: 0 auto;
+    display: block;
+    margin: 10px;
+    box-shadow: 0 0 40px var(--boxShadowColor);
+    z-index: 777;
+    margin-top: 20px;
+}
+
+
+.header-slider .slick-slide img {
+    width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+    .header-slider {
+        border-radius: 10px;
+    }
+}
+
+/***** Products *****/
+.products {
+    border-radius: 15px;
+    background: var(--backgroundColor1);
+    margin-top: 20px;
+    padding-bottom: 80px;
+}
+
+.products .header {
+    padding: 0 10px;
+    width: 100%;
+}
+
+.products .header .title {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    color: var(--textColor1);
+    line-height: 13px;
+    padding: 0 20px;
+}
+
+.products .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 15px 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 4px var(--boxShadowColor);
+    background: var(--backgroundColor2);
+}
+
+.products .products-container .product {
+    padding: 12px 0px;
+    background-color: var(--backgroundColor1);
+    display: inline-block;
+    box-shadow: 0 0 3px var(--boxShadowColor);
+    margin: 5px;
+    position: relative;
+    width: calc(100% / 4 - 10px);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.products .products-container .product .discount {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 38px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 750;
+    clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0 100%, 0 0);
+    background: var(--brandingColor);
+}
+
+.products .products-container .product .product-image {
+    overflow: hidden;
+    max-height: 170px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.products .products-container .product .product-image img {
+    height: 170px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    transition: all .3s ease;
+}
+
+.products .products-container .product .product-image:hover img {
+    opacity: 0.7;
+}
+
+.products .products-container .product .links {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    padding: 2px 2px 2px 2.5px;
+    overflow: hidden;
+    z-index: 666;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 2px var(--boxShadowColor);
+    background: var(--backgroundColor1) !important;
+    border-radius: 20px;
+}
+
+.products .products-container .product .links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer !important;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}
+
+.products .products-container .product .links a:nth-child(1) {
+    padding: 7px 0px;
+}
+
+.products .products-container .product .links a:nth-child(2) {
+    padding: 7px 4px;
+}
+
+.products .products-container .product .links a:nth-child(1) svg {
+    height: 18px;
+    fill: var(--textColor1);
+}
+
+.products .products-container .product .links a:nth-child(2) svg {
+    height: 16px;
+    fill: var(--textColor1);
+}
+
+.products .products-container .product .links a:hover {
+    background: var(--backgroundColor2);
+}
+
+.product:hover .cart {
+    bottom: 0px;
+}
+
+.products .products-container .product .details {
+    padding: 12px;
+}
+
+.products .products-container .product .title {
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 450;
+    margin: 0 0 8px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 100%;
+}
+
+.products .products-container .product .title a {
+    color: var(--textColor2);
+    transition: .5s;
+    text-decoration: none;
+}
+
+.products .products-container .product .title a:hover {
+    color: var(--brandingColor);
+}
+
+.products .products-container .product .price {
+    color: rgb(255, 102, 102);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 15px;
+    white-space: nowrap;
+}
+
+.products .products-container .product .price .bdt-sign {
+    font-size: 25px;
+    font-weight: 850;
+}
+
+.products .products-container .product .price .real-price {
+    color: var(--textColor2);
+    margin-right: 8px;
+    margin-bottom: 5px;
+    text-decoration: line-through;
+    font-weight: 350;
+    font-size: 14px;
+}
+
+.products .products-container .product .store {
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    color: var(--brandingColor);
+    margin-top: 14px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+    display: inline;
+    line-height: 13px;
+    float: left;
+}
+
+@media screen and (max-width: 1050px) {
+    .products .products-container .product {
+        width: calc(100% / 4 - 30px);
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .products {
+        padding: 10px 0 !important;
+    }
+
+    .products .products-container .product {
+        width: calc(100% / 4 - 20px);
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .products .products-container .product {
+        width: calc(100% / 4 - 10px);
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .products .products-container .product {
+        width: calc(100% / 3 - 40px);
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .products .products-container .product {
+        width: calc(100% / 3 - 20px);
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .products .products-container .product {
+        width: calc(100% / 3 - 10px);
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .products .products-container .product {
+        width: calc(100% / 3 - 10px);
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .products {
+        padding: 0 5px;
+    }
+
+    .products .products-container .product {
+        width: calc(100% / 2 - 40px);
+        margin: 20px;
+    }
+
+    .products .products-container .product .discount {
+        width: 30px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .products {
+        margin-top: 0px;
+    }
+
+    .products .header .title {
+        margin: 0 0 30px 0;
+    }
+
+    .products .products-container .product {
+        width: calc(100% / 2 - 20px);
+        margin: 10px;
+    }
+
+    .products .products-container .product .links {
+        width: 30px;
+    }
+
+    .products .products-container .product .title {
+        font-size: 15.5px;
+    }
+
+    .products .products-container .product .title a {
+        color: var(--textColor2);
+        transition: .5s;
+        text-decoration: none;
+    }
+
+    .products .products-container .product .title a:hover {
+        color: var(--brandingColor);
+    }
+
+    .products .products-container .product .price {
+        font-size: 14px;
+    }
+
+    .products .products-container .product .price .bdt-sign {
+        font-size: 20px;
+    }
+
+    .products .products-container .product .store {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .products .products-container .product {
+        width: calc(100% / 2 - 10px);
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .products .products-container .product {
+        width: 230px;
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,37 @@
+.preloader{
+    position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--backgroundColor1);
+      display: flex;
+      align-items: center;
+      z-index: 111111111;
+      transition: .3s;
+      justify-content: center;
+  }
+  .preloader div{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: var(--backgroundColor3);
+      transition: .2s;
+      animation: preloader-animate 1s infinite;
+      opacity: 1;
+  }
+  .preloader.hide{
+      opacity: 0;
+  }
+  @keyframes preloader-animate{
+      50%{
+          opacity: 0;
+          height: 30px;
+          width: 30px;
+      }
+      100%{
+          opacity: 1;
+          height: 40px;
+          width: 40px;
+      }
+  }

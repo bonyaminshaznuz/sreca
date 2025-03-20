@@ -1,0 +1,99 @@
+.page-body-withdraw{
+    max-width: 550px;
+    padding: 30px 20px 60px 20px;
+    margin: 0 auto;
+  }
+  
+  .page-title-withdraw{
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+      color: var(--brandingColor);
+      border-bottom: 2px solid var(--backgroundColor3);
+  }
+  
+  .details-withdraw{
+    margin-top: 30px;
+  }
+  .details-withdraw-container{
+      display: grid;
+      grid-gap: 25px;
+  }
+  .details-withdraw-container .card{
+      border: none;
+      box-shadow: 0 0 5px var(--boxShadowColor);
+      border-radius: 6px;
+      background: var(--backgroundColor1);
+      padding: 10px;
+      display: grid;
+  }
+  .details-withdraw-container .card .title{
+      display: flex;
+      font-size: 18px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 550;
+      align-items: center;
+      color: var(--textColor1);
+  }
+  .details-withdraw-container .card .title span{
+      margin-right: 10px;
+  }
+  .details-withdraw-container .card .value{
+      display: flex;
+      font-size: 18px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 400;
+      color: var(--textColor1);
+  }
+  
+  section.payment-method-withdraw{
+      margin-top: 30px;
+  }
+  section.payment-method-withdraw .title{
+      font-size: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 550;
+      color: var(--textColor1);
+  }
+  section.payment-method-withdraw .payments-container{
+      padding: 0;
+      margin: 0;
+      display: flex;
+    justify-content: space-between;
+      margin-top: 20px;
+      grid-gap: 20px;
+    width: 100%;
+  }
+  section.payment-method-withdraw .payments-container .card{
+      box-shadow: none;
+      display: flex !important;
+      border: none;
+    align-items: center;
+    justify-content: center;
+      border-radius: 8px;
+      background: var(--backgroundColor2);
+    box-shadow: 0 0 10px var(--backgroundColor3);
+      cursor: pointer;
+    overflow: hidden;
+    border: 3px solid transparent;
+  }
+  section.payment-method-withdraw .payments-container .card:hover{
+      background: var(--backgroundColor2);
+    box-shadow: 0 0 5px var(--boxShadowColor);
+  }
+  section.payment-method-withdraw .payments-container .card.active{
+    border: 3px solid var(--brandingColor);
+  }
+  section.payment-method-withdraw .payments-container .card img{
+    width: 100%;
+  }
+  @media screen and (max-width: 460px) {
+    section.payment-method-withdraw .payments-container{
+      justify-content: center;
+    }
+  }
+  
+  .page-body-withdraw form{
+      width: 100% !important;
+      margin-top: 30px;
+  }

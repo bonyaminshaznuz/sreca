@@ -1,0 +1,205 @@
+.page-body-help-and-support {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .help-header {
+    padding: 40px 10px;
+    text-align: center;
+  }
+  
+  .help-header .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--brandingColor);
+  }
+  
+  .help-header form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .help-header form input {
+    background: var(--backgroundColor2);
+    border: 1px solid var(--borderColor1);
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--textColor1);
+    padding: 12px 15px;
+    border-radius: 30px 0 0 30px;
+    flex: 1;
+  }
+  
+  .help-header form button {
+    background: var(--brandingColor);
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    height: 55px;
+    color: var(--textColor1);
+    width: 100px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .help-header form button:hover {
+    filter: brightness(0.9);
+  }
+  
+  .questions {
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--backgroundColor2);
+  }
+  
+  .questions .header .title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--textColor1);
+    border-bottom: 2px solid var(--boxShadowColor);
+    padding-bottom: 10px;
+  }
+  
+  .questions .category-nav {
+    margin-top: 20px;
+  }
+  
+  .questions .category-nav .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--textColor1);
+  }
+  
+  .questions .categories-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .questions .categories-container button {
+    border: none;
+    width: 110px;
+    font-size: 16px;
+    font-weight: 550;
+    padding: 8px 0;
+    color: var(--textColor1);
+    background: var(--backgroundColor1);
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .questions .categories-container button.active {
+    border: 2px solid var(--brandingColor);
+  }
+  
+  .questions .categories-container button:hover {
+    filter: brightness(0.95);
+  }
+  
+  .questions-container {
+    margin-top: 20px;
+  }
+  
+  .questions-container .question-card {
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    background: var(--backgroundColor1);
+    box-shadow: 0 0 5px var(--boxShadowColor);
+  }
+  
+  .questions-container .question-card .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .questions-container .question-card .profile-info .image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--borderColor1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .questions-container .question-card .profile-info .image img {
+    width: 100%;
+  }
+  
+  .questions-container .question-card .profile-info .name {
+    font-size: 18px;
+    font-weight: 550;
+    color: var(--textColor1);
+  }
+  
+  .questions-container .question-card p {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--textColor2);
+  }
+  
+  .questions-container .question-card .reply {
+    border-radius: 10px;
+    padding: 10px;
+    background: var(--backgroundColor2);
+  }
+  
+  .questions .show-more {
+    padding: 8px 0;
+    border: none;
+    background: var(--brandingColor);
+    border-radius: 6px;
+    box-shadow: 0 0 3px var(--boxShadowColor);
+    font-size: 17px;
+    font-weight: 550;
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .questions .show-more:hover {
+    filter: brightness(0.9);
+  }
+  
+  @media screen and (max-width: 690px) {
+    .help-header .title {
+      font-size: 30px;
+    }
+    .help-header form {
+      max-width: 100%;
+    }
+    .help-header form input {
+      height: 50px;
+    }
+    .help-header form button {
+      height: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .help-header .title {
+      font-size: 28px;
+    }
+    .help-header form input {
+      height: 40px;
+    }
+    .help-header form button {
+      height: 40px;
+    }
+    .questions .header .title {
+      font-size: 22px;
+    }
+  }

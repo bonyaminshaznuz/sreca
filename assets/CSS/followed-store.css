@@ -1,0 +1,126 @@
+.followed-store-page-body{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .followed-store-header{
+    margin-top: 20px;
+  }
+  .followed-store-header .title{
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    color: var(--textColor1);
+    border-bottom: 2px solid var(--backgroundColor3);
+  }
+  .followed-store-wrapper{
+    margin-top: 20px;
+  }
+  .followed-store-card{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    background: var(--backgroundColor2);
+    box-shadow: 0 0 2px var(--boxShadowColor);
+  }
+  .followed-store-card .followed-store-info{
+    width: calc(100% - 110px);
+    padding-right: 10px;
+  }
+  .followed-store-card .followed-store-info .c-1{
+    display: flex;
+    align-items: center;
+  }
+  .followed-store-card .followed-store-info .image{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid var(--borderColor1);
+  }
+  .followed-store-card .followed-store-info .image img{
+    width: 100%;
+    border-radius: 50%;
+  }
+  .followed-store-card .followed-store-info .name{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: var(--textColor1);
+    margin-left: 5px;
+  }
+  .followed-store-card .followed-store-info .location{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: var(--textColor1);
+  }
+  .followed-store-card .followed-store-info .c-2{
+    margin-left: 50px;
+    margin-top: -10px;
+  }
+  .followed-store-card .actions{
+    display: flex;
+    float: right;
+    flex-wrap: wrap;
+    width: 110px;
+    overflow: auto;
+  }
+  .followed-store-card .actions button{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    border: none;
+    outline: none !important;
+    color: var(--textColor1);
+    border-radius: 4px;
+    padding: 3px 0 3px 8px;
+    background: var(--backgroundColor1);
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+  }
+  .followed-store-card .actions button:hover{
+    filter: brightness(0.98);
+  }
+  .followed-store-card .actions button:hover span{
+    color: var(--brandingColor);
+  }
+  .followed-store-card .actions button:active span{
+    color: var(--textColor1);
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .followed-store-card .followed-store-info{
+      width: 100%;
+      padding-right: 0;
+    }
+    .followed-store-card .followed-store-info .image{
+      height: 40px;
+      width: 40px;
+    }
+    .followed-store-card .actions{
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+    }
+    .followed-store-card .actions button{
+      width: calc(50% - 10px);
+      margin: 0 5px;
+      text-align: center;
+    }
+  }

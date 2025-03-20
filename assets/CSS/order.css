@@ -1,0 +1,227 @@
+.order-p-page-body{
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--backgroundColor1);
+    box-shadow: 0 0 8px var(--boxShadowColor);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .order-p-header .title{
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+    border-bottom: 2px solid var(--backgroundColor3);
+    font-style: italic;
+    color: var(--textColor1);
+    background: var(--backgroundColor2);
+  }
+  .order-p-header .title span{
+    font-size: 18px;
+    font-style: normal;
+    line-height: 10px !important;
+  }
+  @media screen and (max-width: 900px) {
+    .order-p-page-body{
+      box-shadow: none;
+      border-radius: 0;
+      margin-top: 0 !important;
+      padding-top: 20px;
+    }
+  }
+  @media screen and (max-width: 490px) {
+    .order-p-header .title{
+      font-size: 24px;
+    }
+    .order-p-header .title span{
+      font-size: 16px;
+    }
+  }
+  
+  .order-p-product-card{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  .order-p-product-card .product-image{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 3px var(--boxShadowColor);
+  }
+  .order-p-product-card .product-image img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .order-p-product-card .name{
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    overflow: hidden;
+    padding-left: 10px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: var(--textColor1);
+  }
+  .order-p-product-card .price{
+    font-size: 20px;
+    padding-left: 10px;
+    color: var(--textColor1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+  }
+  .order-p-product-card .price .bdt-sign{
+    font-weight: 1000;
+    color: var(--brandingColor);
+  }
+  .order-p-product-card .actions{
+    float: right;
+  }
+  .order-p-product-card .actions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .order-p-product-card .actions a{
+    border: none;
+    outline: none !important;
+    padding: 4px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0 10px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    background: var(--brandingColor);
+    color: var(--textColor1);
+    border-radius: 4px;
+  }
+  .order-p-product-card .actions a:hover span{
+    color: white;
+  }
+  .order-p-product-card .actions a:active span{
+    color: var(--textColor1);
+  }
+  .order-p-product-card .date{
+    margin-left: 10px;
+  }
+  .order-p-product-card .date .title{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    display: inline-block;
+    color: var(--textColor1);
+  }
+  .order-p-product-card .date span{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 20px;
+    border-radius: 5px;
+    background: var(--backgroundColor3);
+    color: var(--textColor1);
+  }
+  
+  .order-stage{
+    padding: 10px;
+  }
+  .order-stage .section-title{
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    color: var(--textColor1);
+    border-bottom: 2px solid var(--backgroundColor3);
+    padding-bottom: 5px;
+  }
+  .order-stage .section-title span{
+    font-size: 18px;
+    display: block;
+    font-style: italic;
+  }
+  .stages{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  .stages .stage-card{
+    padding: 5px;
+    width: calc(100% / 3);
+    display: flex;
+    opacity: 0.5;
+    float: right;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .stages .stage-card.active{
+    opacity: 1;
+  }
+  .stages .stage-card .image{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    filter: saturate(0.5);
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0.8;
+    border: 3px solid var(--borderColor1);
+    overflow: hidden;
+  }
+  .stages .stage-card.active .image{
+    animation: stage-animate 2s infinite;
+  }
+  @keyframes stage-animate{
+    50%{
+      border-color: var(--brandingColor);
+      opacity: 1;
+    }
+    100%{
+      border-color: var(--borderColor1);
+      opacity: 0.8;
+    }
+  }
+  .stages .stage-card.active .image{
+    filter: none;
+  }
+  .stages .stage-card .image img{
+    width: 100%;
+  }
+  .stages .stage-card .title{
+    font-size: 18px;
+    width: 100%;
+    margin-top: 6px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    color: var(--textColor1);
+  }
+  @media screen and (max-width: 460px) {
+    .order-stage .section-title{
+      font-size: 22px;
+    }
+    .order-stage .section-title span{
+      font-size: 16px;
+      display: block;
+      font-style: italic;
+    }
+    .stages .stage-card{
+      width: 50%;
+    }
+    .stages .stage-card .title{
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 260px) {
+    .stages .stage-card{
+      width: 100%;
+    }
+  }

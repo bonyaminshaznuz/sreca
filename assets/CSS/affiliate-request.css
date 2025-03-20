@@ -1,0 +1,26 @@
+.page-body-aff-req{
+    max-width: 500px;
+    padding: 30px 20px 60px 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .page-title-aff-req{
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: var(--brandingColor);
+  }
+  .aff-req{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    color: var(--textColor2);
+    margin-top: 20px;
+  }
+  .aff-req-form{
+    width: 70%;
+    padding: 0 !important;
+    display: block;
+    margin: 0 auto;
+  }

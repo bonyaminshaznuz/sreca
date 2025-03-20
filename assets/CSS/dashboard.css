@@ -1,0 +1,165 @@
+.page-body{
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .theme-changer{
+    display: grid;
+    margin: 30px 20px;
+    place-items: center;
+  }
+  .theme-changer .theme-switcher{
+    border-radius:15px;
+    width:60px;
+    box-shadow:0 0 3px gray;
+    display:inline-flex;
+    cursor: pointer;
+    flex-wrap:wrap;
+    height:24px;
+    background: var(--backgroundColor3);
+    overflow:hidden;
+  }
+  .changer .theme-switcher .bg{
+    width:8px;
+    height:24px;
+    transition:all .2s ease-in-out;
+    background:var(--brandingColor) !important;
+  }
+  [data-theme="dark"] .theme-changer .theme-switcher .bg{
+    width:44px;
+  }
+  .theme-changer .theme-switcher .circle{
+    height:24px;
+    width:24px;
+    border-radius:50%;
+    background:var(--backgroundColor1);
+    box-shadow:0 0 8px var(--boxShadowColor) !important;
+    margin-left:0px;
+    display: grid;
+    transition:margin .2s ease-in-out;
+    place-items: center;
+  }
+  [data-theme="dark"] .theme-changer .theme-switcher .circle{
+    margin-left: calc(100% - 9px);
+    box-shadow: none;
+  }
+  .theme-changer .theme-switcher .circle span{
+    font-size: 15px;
+    color: var(--textColor1);
+  }
+  
+  .account{
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+  }
+  .account .profile-picture{
+    border-radius: 50%;
+    height: 120px;
+    background: var(--backgroundColor2);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    width: 120px;
+    border: 2px solid var(--borderColor2);
+  }
+  .account .profile-picture img{
+    width: 100%;
+  }
+  .account .name{
+    display: block;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--textColor1);
+  }
+  .account .sessions{
+    width: 100%;
+  }
+  .account .sessions form{
+    margin: 0 auto;
+  }
+  
+  .page-body .links{
+    max-width: 660px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page-body .links .card{
+    border: none;
+    width: calc(50% - 20px);
+    display: inline-block;
+    white-space: nowrap;
+    background: var(--backgroundColor1);
+    text-decoration: none;
+    text-align: left;
+    box-shadow: 0 0 10px var(--backgroundColor3);
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    border-radius: 10px;
+    margin: 10px;
+    color: var(--textColor1);
+    padding: 20px 0 20px 20px;
+  }
+  .page-body .links .card:hover{
+    background: var(--hoverColor);
+  }
+  .page-body .links .card:active{
+    box-shadow: none;
+  }
+  .page-body .links .card span{
+    margin-right: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    .page-body .links .card{
+      font-size: 19px;
+      padding: 20px 10px;
+      width: calc(50% - 22.5px);
+    }
+  }
+  @media only screen and (max-width: 485px) {
+    .page-body .links .card{
+      font-size: 17px;
+      padding: 20px 8px;
+      width: calc(50% - 22.5px);
+    }
+  }
+  @media only screen and (max-width: 440px) {
+    .page-body .links .card{
+      font-size: 20px;
+      padding: 20px;
+      width: calc(100% - 20px);
+    }
+  }
+  @media only screen and (max-width: 365px) {
+    .page-body form{
+      width: unset;
+    }
+  }
+  
+  .page-body .logout-btn{
+    border: none;
+    outline: none !important;
+    background: var(--backgroundColor3);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--textColor1);
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    height: 37px;
+    transition: .1s ease;
+  }
+  .page-body .logout-btn:hover{
+    filter: brightness(0.9);
+  }
+  .page-body .logout-btn:active{
+    background: red;
+    color: white;
+  }

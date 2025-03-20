@@ -1,0 +1,179 @@
+.orders-page-body{
+    max-width: 800px;
+    margin: 0 auto !important;
+    padding: 10px;
+  }
+  .header-order{
+    margin-top: 20px;
+  }
+  .header-order .title{
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    color: var(--textColor1);
+    border-bottom: 2px solid var(--backgroundColor3);
+  }
+  
+  .wrapper-order{
+    margin-top: 20px;
+  }
+  .order-card{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    background: var(--backgroundColor2);
+    box-shadow: 0 0 2px var(--boxShadowColor);
+  }
+  .order-card .c-1{
+    display: flex;
+    width: calc(100% - 135px);
+    padding-right: 5px;
+    align-items: center;
+  }
+  .order-card .product-image{
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid var(--borderColor1);
+  }
+  .order-card .product-image img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .order-card .name{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: var(--textColor1);
+    margin-left: 5px;
+  }
+  .order-card .order-id{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: var(--textColor1);
+    margin-left: 5px;
+  }
+  .order-card .time{
+    margin-left: 5px;
+    margin-top: 7px;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 450;
+    color: var(--textColor2);
+    font-style: italic;
+  }
+  .order-card .process{
+    margin-left: 5px;
+    padding: 0 8px;
+    background: var(--brandingColor);
+    border-radius: 10px;
+    color: var(--textColor2);
+    margin-top: 7px;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+  }
+  .order-card .actions{
+    float: right;
+  }
+  .order-card .c-2{
+    width: 135px;
+  }
+  .order-card .actions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .order-card .actions a{
+    border: none;
+    outline: none !important;
+    padding: 4px 0;
+    padding-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    background: var(--backgroundColor1);
+    color: var(--textColor1);
+    border-radius: 4px;
+    text-align: left;
+  }
+  .order-card .actions a:hover span{
+    color: var(--brandingColor);
+  }
+  .order-card .actions a:active span{
+    color: var(--textColor1);
+  }
+  
+  @media only screen and (max-width: 490px) {
+    .header-order{
+      margin-top: 10px;
+    }
+    .order-card .c-1{
+      width: 100%;
+    }
+    .order-card .c-2{
+      width: 100%;
+      margin-top: 10px;
+    }
+    .order-card .actions a{
+      width: calc(50% - 10px);
+      margin: 0 5px;
+      float: right;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 370px) {
+    .orders-page-body{
+      padding: 0;
+    }
+    .header-order .title{
+      padding-left: 8px;
+    }
+    .order-card{
+      padding: 5px;
+      margin-top: 20px;
+    }
+    .order-card .product-image{
+      height: 85px;
+      width: 85px;
+      border: 1px solid var(--borderColor1);
+    }
+    .order-card .name{
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .order-card .order-id{
+      font-size: 18px;
+      font-weight: 550;
+    }
+    .order-card .time{
+      margin-left: 4px;
+      font-size: 14px;
+    }
+    .order-card .process{
+      margin-left: 4px;
+      padding: 0 6px;
+      font-size: 13px;
+    }
+  }

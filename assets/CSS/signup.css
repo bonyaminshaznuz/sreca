@@ -1,0 +1,49 @@
+.signup-div{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  
+}
+.signup-form-1 .inputs{
+    margin-top: 10px;
+  }
+  .signup-form-1 .fname-input-container,
+  .signup-form-1 .lname-input-container{
+    width: calc(50% - 3px);
+    display: inline-block;
+  }
+  .signup-form-1 .actions .signup-submit{
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .signup-form-2 .captcha-image{
+    width: 100%;
+    background: var(--backgroundColor2);
+    border: 2px solid;
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .signup-form-2 .captcha-image img{
+    width: 100%;
+  }
+  .signup-form-2 .checkbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .signup-form-2 .checkbox input{
+    height: 22px;
+  }
+  .signup-form-2 .checkbox label{
+    font-size: 14px;
+    display: inline-block;
+    color: var(--textColor2);
+    line-height: 20px;
+    margin-left: 8px;
+  }
+  .signup-form-2 .checkbox label a{
+    text-decoration: none;
+    color: var(--brandingColor);
+  }

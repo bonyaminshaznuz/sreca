@@ -1,0 +1,188 @@
+.page-body-mess-noti{
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 0 8px;
+    display: block;
+  }
+  .page-body-mess-noti nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 55px;
+    width: 484px;
+    background: var(--backgroundColor2);
+    box-shadow: 0 1px 0 0 var(--borderColor1);
+  }
+  .page-body-mess-noti nav a{
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--textColor1);
+  }
+  .page-body-mess-noti nav a:hover{
+    background: var(--backgroundColor1);
+  }
+  .page-body-mess-noti nav a.active{
+    background: var(--backgroundColor3);
+  }
+  .page-body-mess-noti nav a svg{
+    height: 22px;
+    fill: var(--textColor1);
+    margin-right: 10px;
+  }
+  .page-body-mess-noti nav a.active svg{
+    fill: var(--brandingColor);
+  }
+  @media only screen and (max-width: 484px) {
+    .page-body-mess-noti nav{
+      width: calc(100% - 16px);
+    }
+  }
+  @media only screen and (max-width: 330px) {
+    .page-body-mess-noti nav div{
+      font-size: 14px;
+    }
+  }
+  
+  .messages-container{
+    display: none;
+  }
+  .messages-container .message-card{
+    border: none;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 5px;
+    border-bottom: 1px solid var(--backgroundColor3);
+    justify-content: space-between;
+  }
+  .messages-container .message-card:hover{
+    background: var(--hoverColor);
+  }
+  .message-card .image{
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--borderColor1);
+    width: 50px;
+    overflow: hidden;
+  }
+  .message-card .image img{
+    width: 100%;
+  }
+  .message-card .details{
+    width: calc(100% - 60px);
+    margin-left: 10px;
+  }
+  
+  .message-card .name{
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    color: var(--textColor1);
+    margin-right: 20px;
+    -webkit-box-orient: vertical;
+    width: 100%;
+  }
+  .message-card .bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  .message-card .bottom .short-message{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    display: -webkit-box;
+    color: var(--textColor1);
+    margin-right: 20px;
+    -webkit-box-orient: vertical;
+  }
+  .message-card .bottom .time{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    color: var(--textColor1);
+  }
+  @media only screen and (max-width: 330px) {
+    .message-card .name{
+      font-size: 16px;
+    }
+    .message-card .bottom .short-message{
+      font-size: 15px;
+    }
+    .message-card .bottom .time{
+      font-size: 15px;
+    }
+  }
+  
+  .notifications-container{
+    display: none;
+  }
+  .notifications-container .notification-card{
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px var(--boxShadowColor);
+    margin: 8px 0;
+  }
+  .notification-card .notification{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .notification-card .image{
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--borderColor1);
+    width: 50px;
+    overflow: hidden;
+  }
+  .notification-card .image img{
+    width: 100%;
+  }
+  .notification-card .details{
+    width: calc(100% - 60px);
+    margin-left: 10px;
+  }
+  .notification-card .title{
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: var(--textColor1);
+  }
+  .notification-card .time{
+    font-size: 16px;
+    color: var(--textColor1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+  }
+  .notification-card .description{
+    background: var(--backgroundColor2);
+    margin-top: 10px;
+    padding: 8px;
+    color: var(--textColor1);
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 330px) {
+    .notification-card .title{
+      font-size: 16px;
+    }
+    .notification-card .time{
+      font-size: 15px;
+    }
+    .notification-card .description{
+      font-size: 15px;
+    }
+  }
